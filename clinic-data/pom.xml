@@ -3,12 +3,12 @@
     <parent>
         <artifactId>SpringPetClinic</artifactId>
         <groupId>com.babalola</groupId>
-        <version>0.0.3-SNAPSHOT</version>
+        <version>0.0.3</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>clinic-data</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.3</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

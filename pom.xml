@@ -16,7 +16,7 @@
 
     <groupId>com.babalola</groupId>
     <artifactId>SpringPetClinic</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>SpringPetClinic</name>
     <description>SpringPetClinic</description>
 
@@ -40,6 +40,7 @@
                 <version>2.5.3</version>
                 <configuration>
                     <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                     <checkModificationExcludes>
                         <checkModificationExclude>pom.xml</checkModificationExclude>
                     </checkModificationExcludes>
@@ -50,7 +51,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:BabalolaBrainiac/Spring-Pet-Clinic.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>SpringPetClinic-0.0.3</tag>
   </scm>
 
 </project>
