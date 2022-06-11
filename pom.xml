@@ -50,7 +50,6 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:BabalolaBrainiac/Spring-Pet-Clinic.git</developerConnection>
-      <tag>SpringPetClinic-0.0.1</tag>
   </scm>
 
 </project>
