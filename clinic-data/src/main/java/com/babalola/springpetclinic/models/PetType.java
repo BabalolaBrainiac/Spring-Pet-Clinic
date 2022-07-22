@@ -1,4 +1,4 @@
 package com.babalola.springpetclinic.models;
 
-public class PetType {
+public class PetType extends BaseEntity {
 }
