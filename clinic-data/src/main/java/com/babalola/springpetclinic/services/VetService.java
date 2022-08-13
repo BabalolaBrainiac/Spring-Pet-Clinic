@@ -1,6 +1,7 @@
 package com.babalola.springpetclinic.services;
 
 import com.babalola.springpetclinic.models.Vet;
+import org.springframework.stereotype.Component;
 
 import java.util.Set;
 

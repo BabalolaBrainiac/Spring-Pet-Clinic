@@ -4,14 +4,18 @@ import com.babalola.springpetclinic.models.Pet;
 import com.babalola.springpetclinic.services.OwnerService;
 import com.babalola.springpetclinic.services.PetService;
 import com.babalola.springpetclinic.services.PetTypeService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
-    public final PetTypeService petTypeService;
-    public final PetService petService;
 
-    public OwnerServiceMap(PetTypeService petTypeService, PetService petService) {
+@Service
+public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
+    private final PetTypeService petTypeService;
+    private final PetService petService;
+
+
+    public OwnerMapService(PetTypeService petTypeService, PetService petService) {
         this.petTypeService = petTypeService;
         this.petService = petService;
     }

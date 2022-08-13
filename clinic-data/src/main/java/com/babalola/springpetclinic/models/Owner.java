@@ -35,8 +35,8 @@ public class Owner extends Person{
         this.phoneNumber = phoneNumber;
     }
 
-    public List<Pet> getPets() {
-        return this.getPets();
+    public Set<Pet> getPets() {
+        return pets;
     }
 
     public void setPets(Set<Pet> pets) {
