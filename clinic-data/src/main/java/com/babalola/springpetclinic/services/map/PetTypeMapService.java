@@ -1,32 +1,30 @@
 package com.babalola.springpetclinic.services.map;
-
-import com.babalola.springpetclinic.models.Vet;
-import com.babalola.springpetclinic.services.CrudService;
-
+import com.babalola.springpetclinic.models.PetType;
+import com.babalola.springpetclinic.services.PetTypeService;
 import java.util.Set;
 
-public class VetMapService extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService{
+
     @Override
-    public Vet findById(Long id) {
+    public PetType findById(Long id) {
         return super.findById(id);
     }
 
     @Override
-    public Vet save(Vet object) {
+    public PetType save(PetType object) {
         return super.save(object);
     }
 
     @Override
-    public Set<Vet> findAll() {
+    public Set<PetType> findAll() {
         return super.findAll();
     }
 
     @Override
-    public void delete(Vet object) {
+    public void delete(PetType object) {
         super.delete(object);
 
     }
-
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
