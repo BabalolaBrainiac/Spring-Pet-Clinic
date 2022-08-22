@@ -1,13 +1,31 @@
 package com.babalola.springpetclinic.models;
 
+import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
+
+@Entity
+@Table(name = "pets")
 public class Pet extends BaseEntity {
+
+    @ManyToOne
+    @JoinColumn(name = "type_id")
     PetType petType;
+
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
     Owner owner;
+
+    @Column(name = "birth_date")
     LocalDate birthDate;
 
+    @Column(name = "name")
     String name;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
+    private Set<Visit> visit = new HashSet<>();
 
     public String getName() {
         return name;
@@ -41,4 +59,11 @@ public class Pet extends BaseEntity {
         this.birthDate = birthDate;
     }
 
+    public Set<Visit> getVisit() {
+        return visit;
+    }
+
+    public void setVisit(Set<Visit> visit) {
+        this.visit = visit;
+    }
 }

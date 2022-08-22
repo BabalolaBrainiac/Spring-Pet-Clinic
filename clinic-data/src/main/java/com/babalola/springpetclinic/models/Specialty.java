@@ -1,18 +1,16 @@
 package com.babalola.springpetclinic.models;
 
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "specialties")
 public class Specialty extends BaseEntity{
 
-    private String name;
+    @Column(name = "description")
     private String description;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getDescription() {
         return description;
     }
